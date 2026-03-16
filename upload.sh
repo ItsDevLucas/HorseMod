@@ -1,7 +1,7 @@
 set -e
 
 # script usage
-VERSION="${1:?Usage: ./publish.sh <version> [gh-options]}"
+VERSION="${1:?Usage: ./upload.sh <version> [gh-options]}"
 shift || true
 
 # make sure main branch is being uploaded
