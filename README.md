@@ -24,7 +24,7 @@ In alphabetical order:
 
 ### Translators
 - Czech (Try Honesty)
-- French (SimKDT)
+- French (SimKDT and Xianah)
 - Japanese (PePePePePeil)
 - Polish (3xkd)
 - Portugues (Refúgio Z)
@@ -32,4 +32,5 @@ In alphabetical order:
 - Simplified Chinese (Cetty McTrailwinder)
 - Spanish (carlesturo)
 - Turkish (Sineks)
+- German (Jackson Frost)
 - Simplified Chinese (喵老大_MiaoLD and Cetty McTrailwinder)
