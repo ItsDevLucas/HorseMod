@@ -180,6 +180,16 @@
         </m_Conditions>
     </m_Transitions>
     <m_Transitions>
+        <m_Target>Horse_RunJump</m_Target>
+        <m_blendInTime>0.30</m_blendInTime>
+        <m_blendOutTime>0.30</m_blendOutTime>
+        <m_Conditions>
+            <m_Name>HorseJump</m_Name>
+            <m_Type>BOOL</m_Type>
+            <m_Value>true</m_Value>
+        </m_Conditions>
+    </m_Transitions>
+    <m_Transitions>
         <m_Target>Horse_Run_Walkstate</m_Target>
         <m_BlendTime>1.80</m_BlendTime>
         <m_Conditions>
