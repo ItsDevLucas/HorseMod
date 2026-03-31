@@ -20,6 +20,7 @@ ItemName_ES = {
 	ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "Silla de Montar (Leopardo)"
 	ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "Silla de Montar (Castaño)"
 	ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "Silla de Montar (Tordo Picazo)"
+    ItemName_HorseMod.HorseSaddle_Western = "Silla de Montar (Western)"
 
         /* Saddlebags */
     ItemName_HorseMod.HorseSaddlebagsContainer = "Alforjas para Caballo"

@@ -20,6 +20,7 @@ ItemName_PL = {
     ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "Siodło (Lampartowate)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "Siodło (Gniade)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "Siodło (Siwe Tarantowate)"
+    ItemName_HorseMod.HorseSaddle_Western = "Siodło (Western)"
 
         /* Saddlebags Sakwy */
     ItemName_HorseMod.HorseSaddlebagsContainer = "Sakwy na Siodło"

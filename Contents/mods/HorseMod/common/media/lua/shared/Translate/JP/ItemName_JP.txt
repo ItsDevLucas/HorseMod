@@ -20,6 +20,7 @@ ItemName_JP = {
     ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "鞍（レオパード）"
     ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "鞍（ベイ）"
     ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "鞍（フリービッテン・グレイ）"
+    ItemName_HorseMod.HorseSaddle_Western = "鞍 (Western)"
 
         /* Saddlebags */
     ItemName_HorseMod.HorseSaddlebagsContainer = "鞍袋"

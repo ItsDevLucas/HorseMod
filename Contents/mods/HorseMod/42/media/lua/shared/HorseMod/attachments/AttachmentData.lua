@@ -258,6 +258,7 @@ AttachmentData.items = {
     ["HorseMod.HorseSaddle_AppaloosaLeopard"] = DEFAULT_ATTACHMENT_DEFS.SADDLE,
     ["HorseMod.HorseSaddle_ThoroughbredBay"] = DEFAULT_ATTACHMENT_DEFS.SADDLE,
     ["HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey"] = DEFAULT_ATTACHMENT_DEFS.SADDLE,
+    ["HorseMod.HorseSaddle_Western"] = DEFAULT_ATTACHMENT_DEFS.SADDLE,
 
     -- saddlebags
         -- vanilla animals
