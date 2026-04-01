@@ -65,6 +65,7 @@ end
 ---@param horse IsoAnimal
 local function initialiseHorse(horse)
     horse:setVariable(AnimationVariable.IS_HORSE, true)
+    horse:setVariable(AnimationVariable.SILLY, true)
 
     local speed = horse:getUsedGene("speed"):getCurrentValue()
     horse:setVariable(AnimationVariable.GENE_SPEED, speed)
