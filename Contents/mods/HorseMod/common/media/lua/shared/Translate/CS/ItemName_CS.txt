@@ -20,6 +20,7 @@ ItemName_CZ = {
     ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "Sedlo pro koně (Leopard)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "Sedlo pro koně (Bay)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "Sedlo pro koně (Flea-Bitten Grey)"
+    ItemName_HorseMod.HorseSaddle_Western = "Sedlo pro koně (Western)"
 
         /* Saddlebags */
     ItemName_HorseMod.HorseSaddlebagsContainer = "Brašny pro koně"

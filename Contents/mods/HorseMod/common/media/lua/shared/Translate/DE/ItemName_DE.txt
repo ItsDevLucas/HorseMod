@@ -20,6 +20,7 @@ ItemName_DE = {
     ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "Sattel (Appaloosa Leopard)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "Sattel (Braun)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "Sattel (Graufleckig)"
+    ItemName_HorseMod.HorseSaddle_Western = "Sattel (Western)"
 
         /* Saddlebags */
     ItemName_HorseMod.HorseSaddlebagsContainer = "Satteltaschen"

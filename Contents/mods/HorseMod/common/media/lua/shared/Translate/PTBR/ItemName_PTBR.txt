@@ -20,6 +20,7 @@ ItemName_PTBR = {
     ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "Sela de Cavalo (Leopardo)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "Sela de Cavalo (Baio)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "Sela de Cavalo (Tordilho Mosqueado)"
+    ItemName_HorseMod.HorseSaddle_Western = "Sela de Cavalo (Western)"
 
         /* Alforjes */
     ItemName_HorseMod.HorseSaddlebagsContainer = "Alforjes de Cavalo"

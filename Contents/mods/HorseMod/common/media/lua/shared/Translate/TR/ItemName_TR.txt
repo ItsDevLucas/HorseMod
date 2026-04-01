@@ -20,6 +20,7 @@ ItemName_TR = {
     ItemName_HorseMod.HorseSaddle_AppaloosaLeopard = "At Eyeri (Leopard)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredBay = "At Eyeri (Doru)"
     ItemName_HorseMod.HorseSaddle_ThoroughbredFleaBittenGrey = "At Eyeri (Benekli Kır)"
+    ItemName_HorseMod.HorseSaddle_Western = "At Eyeri (Western)"
 
         /* Heybe */
     ItemName_HorseMod.HorseSaddlebagsContainer = "Heybe"
