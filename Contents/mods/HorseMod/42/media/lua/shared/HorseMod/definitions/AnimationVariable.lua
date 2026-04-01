@@ -41,7 +41,9 @@ local AnimationVariable = {
     -- unused
     GENE_STAMINA = "HorseGeneStamina",
     -- unused
-    GENE_CARRYWEIGHT = "HorseGeneCarryWeight"
+    GENE_CARRYWEIGHT = "HorseGeneCarryWeight",
+
+    SILLY = "HorseSilly"
 }
 
 return AnimationVariable
