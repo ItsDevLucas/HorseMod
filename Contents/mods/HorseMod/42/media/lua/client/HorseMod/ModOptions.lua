@@ -1,6 +1,3 @@
-local AnimationVariable = require("HorseMod/definitions/AnimationVariable")
-local HorseManager = require("HorseMod/HorseManager")
-
 ---Holds the mod option values of the HorseMod.
 ---@type table<string, any>
 local ModOptions = {
@@ -11,7 +8,7 @@ local ModOptions = {
     ---Horse jump keybind.
     ---@type integer
     HorseJumpButton = Keyboard.KEY_SPACE,
-
+    
     ---Horse trot switch keybind.
     ---@type integer
     HorseTrotButton = Keyboard.KEY_X,
@@ -19,10 +16,6 @@ local ModOptions = {
     ---Horse gallop switch keybind.
     ---@type integer
     HorseGallopButton = Keyboard.KEY_LSHIFT,
-
-    ---Silly horse animations toggle.
-    ---@type boolean
-    SillyHorse = true,
 }
 
 
@@ -61,14 +54,6 @@ options:addKeyBind(
     "IGUI_ModOptions_HorseKeybind_Gallop_Tooltip"
 )
 
----SILLY HORSE
-options:addDescription(getText("IGUI_ModOptions_SillyHorse_Desc"))
-options:addTickBox(
-    "SillyHorse",
-    getText("IGUI_ModOptions_SillyHorse_Name"),
-    ModOptions.SillyHorse
-)
-
 ---This is a helper function that will automatically populate the "config" table.
 ---Retrieve each option from their `ID` with: `config.ID`
 function options:apply()
@@ -83,17 +68,7 @@ function options:apply()
             ModOptions[k] = v:getValue()
         end
     end
-
-    -- Apply silly horse setting to all loaded horses
-    for i = 1, #HorseManager.horses do
-        HorseManager.horses[i]:setVariable(AnimationVariable.SILLY, ModOptions.SillyHorse)
-    end
 end
-
--- When a new horse is loaded, apply the current silly setting
-HorseManager.onHorseAdded:add(function(horse)
-    horse:setVariable(AnimationVariable.SILLY, ModOptions.SillyHorse)
-end)
 
 ---Init values
 Events.OnMainMenuEnter.Add(function()
