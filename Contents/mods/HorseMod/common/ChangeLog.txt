@@ -62,5 +62,11 @@ Fixed:
 
 Translation:
 - French translation missing item name.
+[ ------ ]
 
+[ 25/04/02 ]
+v1.0.4
+
+Changed:
+- Removed April Fool's silly joke animations (It will come back as an addon!)
 [ ------ ]
