@@ -1,4 +1,4 @@
-name: Deploy docs
+name: Deploy Docs
 
 on:
   push:
@@ -7,17 +7,15 @@ on:
     paths:
       - "docs/**"
       - "*.lua"
-  pull_request:
   workflow_dispatch:
 
 jobs:
   build:
-    name: Build
+    name: build
     uses: ./.github/workflows/buildDocs.yml
 
   deploy:
     needs: build
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
 
     permissions:
       pages: write
