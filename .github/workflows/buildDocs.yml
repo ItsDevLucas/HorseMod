@@ -44,18 +44,16 @@ jobs:
 
       - name: Set Umbrella env var
         run: |
-          cd vendor/Umbrella/library
-          echo "PZ_UMBRELLA=$(pwd)" >> $GITHUB_ENV
-          cd ../../../
+          echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
+          echo "PZ_UMBRELLA is set to: $PZ_UMBRELLA"
 
       - name: Build Sphinx
         run: |
-          echo "PZ_UMBRELLA is set to: $PZ_UMBRELLA"
           cd docs
           make html
 
       - name: Upload artifact
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.base_ref == 'main'
         uses: actions/upload-pages-artifact@v4
         with:
           path: docs/build/html
