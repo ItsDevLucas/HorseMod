@@ -23,10 +23,5 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs/build/html
-
       - name: Deploy to pages
         uses: actions/deploy-pages@v5
