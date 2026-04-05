@@ -2,7 +2,11 @@ name: Build Docs
 
 on:
   push:
+    branches-ignore:
+      - main
   pull_request:
+    branches-ignore:
+      - main
   workflow_call:
   workflow_dispatch:
 
@@ -51,9 +55,3 @@ jobs:
         run: |
           cd docs
           make html
-
-      - name: Upload artifact
-        if: github.event_name != 'pull_request' && github.ref != 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs/build/html
