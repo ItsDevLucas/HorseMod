@@ -13,7 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout self
         uses: actions/checkout@v6
@@ -26,8 +25,7 @@ jobs:
           cache-dependency-path: "docs/requirements.txt"
 
       - name: Install dependencies
-        run: |
-          pip install -r docs/requirements.txt
+        run: pip install -r docs/requirements.txt
 
       - name: Get Umbrella remote SHA
         id: get-umbrella-remote-sha
@@ -44,15 +42,14 @@ jobs:
 
       - name: Setup Umbrella repo
         if: steps.cache-umbrella-repo.outputs.cache-hit != 'true'
-        run: |
-          git clone --depth=1 --no-tags https://github.com/PZ-Umbrella/Umbrella.git vendor/Umbrella
+        run: git clone --depth=1 --no-tags https://github.com/PZ-Umbrella/Umbrella.git vendor/Umbrella
 
       - name: Set Umbrella env var
         run: |
           echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
           echo "PZ_UMBRELLA is set to: $PZ_UMBRELLA"
 
-      - name: Build Sphinx
+      - name: Build website with Sphinx
         run: |
           cd docs
           make html
