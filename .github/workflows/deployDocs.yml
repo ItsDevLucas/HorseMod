@@ -5,13 +5,12 @@ on:
     branches:
       - "main"
     paths:
-      - "docs/**"
-      - "*.lua"
+      - "docs/source/**"
+      - "Contents/mods/**/*.lua"
   workflow_dispatch:
 
 jobs:
   build:
-    name: build
     uses: ./.github/workflows/buildDocs.yml
 
   deploy:
