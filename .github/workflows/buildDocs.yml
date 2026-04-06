@@ -20,8 +20,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout self
+      - name: Checkout
         uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            .github
+            Contents
+            docs
+            .emmyrc.json
+            .gitignore
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -46,9 +53,12 @@ jobs:
           path: ./vendor/Umbrella
           key: vendor-umbrella-${{ steps.get-umbrella-remote-sha.outputs.UMBRELLA_HEAD_SHA }}
 
-      - name: Setup Umbrella repo
+      - name: Checkout Umbrella
         if: steps.cache-umbrella-repo.outputs.cache-hit != 'true'
-        run: git clone --depth=1 --no-tags https://github.com/PZ-Umbrella/Umbrella.git vendor/Umbrella
+        uses: actions/checkout@v6
+        with:
+          repository: PZ-Umbrella/Umbrella
+          path: vendor/Umbrella
 
       - name: Set Umbrella env var
         run: echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
