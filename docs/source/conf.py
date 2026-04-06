@@ -1,5 +1,3 @@
-from os import environ
-
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -29,8 +27,6 @@ highlight_language = "lua"
 
 lua_ls_project_root = "../../"
 lua_ls_backend = "emmylua"
-if "CI" in environ:
-    lua_ls_auto_install = False
 lua_ls_default_options = {
     "require-separator": "/",
     "annotate-require": "always"

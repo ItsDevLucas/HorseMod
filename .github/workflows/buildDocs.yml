@@ -60,13 +60,6 @@ jobs:
 
       - name: Set Umbrella env var
         run: echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
-      
-      - name: Setup Rust Toolchain
-        uses: actions-rust-lang/setup-rust-toolchain@v1
-        
-      # Do it manually because sphinx-lua-ls doesn't cache it.
-      - name: Setup EmmyLua
-        run: cargo install emmylua_doc_cli
 
       - name: Build website with Sphinx
         run: |
