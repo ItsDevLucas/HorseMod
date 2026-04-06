@@ -47,7 +47,6 @@ jobs:
       - name: Set Umbrella env var
         run: |
           echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
-          echo "PZ_UMBRELLA is set to: $PZ_UMBRELLA"
 
       - name: Build website with Sphinx
         run: |
