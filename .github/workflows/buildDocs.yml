@@ -4,9 +4,15 @@ on:
   push:
     branches-ignore:
       - main
+    paths:
+      - "docs/source/**"
+      - "Contents/mods/**/*.lua"
   pull_request:
     branches-ignore:
       - main
+    paths:
+      - "docs/source/**"
+      - "Contents/mods/**/*.lua"
   workflow_call:
   workflow_dispatch:
 
