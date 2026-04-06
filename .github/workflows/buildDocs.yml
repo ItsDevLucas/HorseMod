@@ -45,8 +45,7 @@ jobs:
         run: git clone --depth=1 --no-tags https://github.com/PZ-Umbrella/Umbrella.git vendor/Umbrella
 
       - name: Set Umbrella env var
-        run: |
-          echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
+        run: echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
 
       - name: Build website with Sphinx
         run: |
