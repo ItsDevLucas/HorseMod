@@ -60,6 +60,16 @@ jobs:
 
       - name: Set Umbrella env var
         run: echo "PZ_UMBRELLA=$(realpath vendor/Umbrella/library)" >> $GITHUB_ENV
+      
+      # Do it manually because sphinx-lua-ls doesn't cache it.
+      - name: Setup EmmyLua
+        uses: moonrepo/setup-rust@v1
+        with:
+          cache-target: release
+          bins: emmylua_doc_cli
+        env:
+          # Avoid rate limiting
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build website with Sphinx
         run: |
