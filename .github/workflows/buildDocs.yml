@@ -5,10 +5,12 @@ on:
     branches-ignore:
       - main
     paths:
+      - ".github/workflows/**.yml"
       - "docs/source/**"
       - "Contents/mods/**/*.lua"
   pull_request:
     paths:
+      - ".github/workflows/**.yml"
       - "docs/source/**"
       - "Contents/mods/**/*.lua"
   workflow_call:
