@@ -8,8 +8,6 @@ on:
       - "docs/source/**"
       - "Contents/mods/**/*.lua"
   pull_request:
-    branches-ignore:
-      - main
     paths:
       - "docs/source/**"
       - "Contents/mods/**/*.lua"
