@@ -20,6 +20,8 @@ ContextMenu_ES = {
     ContextMenu_Horse_Slot_Saddle = "Silla"
     ContextMenu_Horse_Slot_Saddlebags = "Alforjas"
     ContextMenu_Horse_Slot_Reins = "Riendas"
+    ContextMenu_Horse_Slot_Tent = "Tienda de Campaña"
+    ContextMenu_Horse_Slot_SleepingBag = "Saco de Dormir"
 
     /* Unavailability reasons for options */
     ContextMenu_Horse_NotAdult = "No es un caballo adulto."
