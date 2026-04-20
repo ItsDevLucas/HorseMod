@@ -519,14 +519,18 @@ local function moveWithCollision(rider, horse, distance, isGalloping, isJumping)
     local maxProbeDistance = math.sqrt(36) + distance:getLength() + 1
     local maxProbeDistanceSq = maxProbeDistance * maxProbeDistance
     -- Cache nearby vehicles once for this move call; reused by all substeps.
+    -- 42.17 changed getVehicles() to return a Set, which is not indexable; iterate instead.
     local allVehicles = getCell():getVehicles()
-    for i = 1, allVehicles:size() do
-        local vehicle = allVehicles:get(i - 1)
-        if vehicle and math.floor(vehicle:getZ()) == z then
-            local dx = vehicle:getX() - x
-            local dy = vehicle:getY() - y
-            if (dx * dx + dy * dy) <= maxProbeDistanceSq then
-                candidates[#candidates + 1] = vehicle
+    if allVehicles then
+        local it = allVehicles:iterator()
+        while it:hasNext() do
+            local vehicle = it:next()
+            if vehicle and math.floor(vehicle:getZ()) == z then
+                local dx = vehicle:getX() - x
+                local dy = vehicle:getY() - y
+                if (dx * dx + dy * dy) <= maxProbeDistanceSq then
+                    candidates[#candidates + 1] = vehicle
+                end
             end
         end
     end
