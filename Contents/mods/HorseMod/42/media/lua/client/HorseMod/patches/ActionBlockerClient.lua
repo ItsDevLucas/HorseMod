@@ -15,7 +15,7 @@ function ISTimedActionQueue.addAfter(previousAction, action)
             return
         end
     end
-    ActionBlockerClient.addAfter(previousAction, action)
+    return ActionBlockerClient.addAfter(previousAction, action)
 end
 
 ActionBlockerClient.add = ISTimedActionQueue.add
@@ -26,7 +26,7 @@ function ISTimedActionQueue.add(action)
             return
         end
     end
-    ActionBlockerClient.add(action)
+    return ActionBlockerClient.add(action)
 end
 
 return ActionBlockerClient
